@@ -14,7 +14,6 @@ export const ExpenseForm = ({charge, handleCharge, amount, handleAmount, handleS
                     <input type="number" className="form-control" id="amount" name="amount" placeholder="e.g. 400" value={amount} onChange={handleAmount}/>
                 </div>
             </div>
-            {/* if edit state is true then show "Edit", if edit state is flase, then show "Submit" */}
             <button type="submit" className="btn"> {edit? "Edit":"Submit"} <MdSend className="btn-icon"/></button> 
         </form>
     )
